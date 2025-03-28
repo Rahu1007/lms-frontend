@@ -173,3 +173,19 @@ add this command  top of 'index.css'
 @tailwind components;
 @tailwind utilities; 
 ----------------------------------------------------------------
+################################
+Adding plugins and dependencies
+and the command is this:- 
+"npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp"
+ ----------------------------------------------------------------
+ when you put the code then its shows this output 
+ ======================================================
+ added 43 packages, and audited 297 packages in 2m
+
+65 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ --------------------------------------------
+ and also you can check in "package.json"
+--------------------------------
