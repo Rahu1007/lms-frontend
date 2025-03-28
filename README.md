@@ -138,3 +138,38 @@ Total 15 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/Rahu1007/lms-frontend.git
  * [new branch]      master -> master
 
+################################ TailwindCSS  setup################################
+step 1: type this command 
+ npm install -D tailwindcss
+----------------------------------------------------------------
+step 2: type this command
+ npx tailwindcss init  
+ ----------------------------------------------------------------
+ if this command is not working then try this command  :  npm install -D tailwindcss@3
+
+and again : npm install -D tailwindcss@3 is not working and not create tailwind.config.js  
+then use this  command : touch tailwind.config.js
+
+----------------------------------------------------------------
+after the create tailwind.config.js
+copy this below command 
+-------
+/** @type {import('tailwindcss').Config} */
+<!-- module.exports = { -->
+export default {
+  content: ["./src/**/*.{html,js}"], // Adjust paths based on your project
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+----------------------------------------------------------------
+
+step 3 :  in file 'index.css'
+add this command  top of 'index.css'
+----------------------------------------------------------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+----------------------------------------------------------------
