@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+
 import './App.css'
 
 function App() {
@@ -5,7 +8,10 @@ function App() {
 
   return (
     <>
-    <p>lms</p>
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
     </>
   )
 }
