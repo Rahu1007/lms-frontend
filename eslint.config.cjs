@@ -10,6 +10,7 @@ module.exports = [
       globals: globals.browser,
     },
     plugins: {
+      "simple-import-sort"
       js,
     },
     extends: ["eslint:recommended", "plugin:react/recommended"],
@@ -19,6 +20,7 @@ module.exports = [
       },
     },
     rules: {
+      "simple-import-sort/imports":"errors",
       "react/react-in-jsx-scope": "off", // Fix React import issue
     },
   },

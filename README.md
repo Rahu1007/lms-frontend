@@ -189,3 +189,37 @@ found 0 vulnerabilities
  --------------------------------------------
  and also you can check in "package.json"
 --------------------------------
+################################################
+--------- configure auto import sort esline ----------------------------------------------------------------
+ 
+1 . Install simple import sort 
+----------------------------------------------------------------
+   npm i -D eslint-plugin-simple-import-sort
+        npm i -D eslint-plugin-simple-import-sort
+----------------------------------------------------------------
+2.Add rule in "esline.cjs"
+----------------------------------------------------------------
+and "eslint-plugin-simple-import-sort" :'error'
+    'simple-import-sort/imports': 'error'
+and also change according to your 
+----------------------------------------------------------------
+3.add simple import sort plugin in '.eslint.cjs'
+----------------------------------------------------------------
+ plugins: {
+      "simple-import-sort"
+      js,
+    },
+
+    or 
+
+     plugins: ['react-refresh',"simple-import-sort", ]
+----------------------------------------------------------------
+4.To enable auto import sort on file  save in vscode
+----------------------------------------------------------------
+  - open 'setting.json'
+  -add the following config
+----------------------------------------------------------------
+"editor.codeActionsOnSave":{
+  "source.fixAll.eslint":true
+}
+--- end 
