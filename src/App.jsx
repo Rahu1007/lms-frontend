@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <p>lms1</p>
+        <p>LMS</p>
         {/* Add your routes and components here */}
       </div>
     </>
