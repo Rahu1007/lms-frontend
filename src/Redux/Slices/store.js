@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-
 import { devtools } from "globals";
 import { reduce } from "../../../eslint.config.cjs";
 
