@@ -21,5 +21,33 @@ npm i
 ```
 3.run the server
 ```
-run server
+npm run dev
 ```
+###setup instruction of tailwindcss
+1.install tailwindcss
+```
+npm install -D tailwindcss@3
+npx tailwindcss init
+```
+2.add file 
+```
+"./src/**/*.{html,js}"
+```
+3. add this in 'index.css' file
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### adding plugins and dependencies 
+```
+npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
+
+```
+
+### adding eslint for simple import
+```
+npm i eslint-plugin-simple-import-sort
+```
+

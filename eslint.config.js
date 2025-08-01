@@ -21,8 +21,13 @@ export default defineConfig([
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
+      plugins: {
+        'react-hooks': reactHooks,
+        'react-refresh': reactRefresh,
+        'simple-import-sort': require('eslint-plugin-simple-import-sort'),
     },
     rules: {
+      'simple-import-sort/imports': 'error',
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
