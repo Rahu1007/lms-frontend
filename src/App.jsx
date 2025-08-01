@@ -1,14 +1,13 @@
-import { Routes } from 'react-router-dom'
 import './App.css'
-
+import Footer from './Components/Footer.jsx'
 function App() {
   
 
   return (
   <> 
-<Routes>
-  lms
-</Routes>
+{/* <Routes> */}
+<Footer/>
+{/* </Routes> */}
   </>
   )
 }

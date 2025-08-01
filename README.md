@@ -51,3 +51,10 @@ npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-char
 npm i eslint-plugin-simple-import-sort
 ```
 
+### adding postcss
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+```
