@@ -1,13 +1,18 @@
 import './App.css'
-import Footer from './Components/Footer.jsx'
+import { Route, Routes } from 'react-router-dom';
+
+// import HomeLayout from './Layouts/HomeLayout.jsx';
+
+import HomePage from './Pages/HomePage.jsx';
 function App() {
   
 
   return (
   <> 
-{/* <Routes> */}
-<Footer/>
-{/* </Routes> */}
+<Routes>
+<Route path="/" element={<HomePage />} />
+</Routes>
+
   </>
   )
 }
