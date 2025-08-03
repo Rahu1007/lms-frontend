@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../Redux/Slices/AuthSlice';
+
 
 function HomeLayout({ children }) {
     const [isSidenavOpen, setSidenavOpen] = useState(false);
@@ -23,7 +25,7 @@ function HomeLayout({ children }) {
         setSidenavOpen(false);
     }
 
-    function handleLogout(e) {
+    async function handleLogout(e) {
         e.preventDefault();
 
         const res=await dispatch(logout());

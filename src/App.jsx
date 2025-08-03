@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 // import HomeLayout from './Layouts/HomeLayout.jsx';
 
 import HomePage from './Pages/HomePage.jsx';
+import Login from './Pages/Login.jsx';
 function App() {
   
 
@@ -11,6 +12,7 @@ function App() {
   <> 
 <Routes>
 <Route path="/" element={<HomePage />} />
+<Route path="/login" element={<Login />} />
 </Routes>
 
   </>
