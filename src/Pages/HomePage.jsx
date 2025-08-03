@@ -12,9 +12,10 @@ function HomePage() {
               Online Courses
             </span>
           </h1>
-          <p className="text-xl text-gray-700">
+          <p className="hover:text-xl text-gray-700">
             We have a large library of courses taught by highly skilled and
             qualified faculties at a very affordable cost.
+         
           </p>
           <div className="space-x-6">
             <Link to="/courses">
