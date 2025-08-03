@@ -23,6 +23,15 @@ function HomeLayout({ children }) {
         setSidenavOpen(false);
     }
 
+    function handleLogout(e) {
+        e.preventDefault();
+
+        const res=await dispatch(logout());
+        if (res?.payload?.success) {
+            navigate('/login');
+        }
+    }
+
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white">
             {/* Sidenav */}
@@ -71,6 +80,24 @@ function HomeLayout({ children }) {
                         </div>
                 </li>
                     )}
+
+                       {isLoggedIn && (
+                <li className="absolute bottom-4 left-0 w-full p-4 rounded-md">
+                        <div className="w-full flex items-center justify-center">
+                                <button className='btn-primary hover:bg-blue-800 px-4 py-1 font-semibold rounded-md w-full mb-2 '>
+                                    <Link to="/user/profile">Profile</Link>
+                                </button>
+
+                                <button className='btn-secondary hover:bg-green-600  px-4 py-1 font-semibold rounded-md w-full mb-2 '>
+                                    <Link onClick={handleLogout}>LogOut</Link>
+                                </button>
+                        </div>
+                </li>
+                    )}
+
+
+
+
 
                 </ul>
             </div>
