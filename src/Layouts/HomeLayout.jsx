@@ -70,31 +70,29 @@ function HomeLayout({ children }) {
                     </li>
 
                     {!isLoggedIn && (
-                <li className="absolute bottom-4 left-0 w-full p-4 rounded-md">
-                        <div className="w-full flex items-center justify-center">
-                                <button className='btn-primary hover:bg-blue-800 px-4 py-1 font-semibold rounded-md w-full mb-2 '>
-                                    <Link to="/login">Login</Link>
-                                </button>
-
-                                <button className='btn-secondary hover:bg-green-600  px-4 py-1 font-semibold rounded-md w-full mb-2 '>
-                                    <Link to="/Signup">Signup</Link>
-                                </button>
-                        </div>
-                </li>
+                        <li className="absolute bottom-4 left-0 w-full p-4">
+                            <div className="w-full flex items-center justify-center gap-4">
+                                <Link to="/login" className='btn-primary hover:bg-blue-800 px-4 py-1 font-semibold rounded-md w-full text-center'>
+                                    Login
+                                </Link>
+                                <Link to="/signup" className='btn-secondary hover:bg-green-600 px-4 py-1 font-semibold rounded-md w-full text-center'>
+                                    Signup
+                                </Link>
+                            </div>
+                        </li>
                     )}
 
-                       {isLoggedIn && (
-                <li className="absolute bottom-4 left-0 w-full p-4 rounded-md">
-                        <div className="w-full flex items-center justify-center">
-                                <button className='btn-primary hover:bg-blue-800 px-4 py-1 font-semibold rounded-md w-full mb-2 '>
-                                    <Link to="/user/profile">Profile</Link>
+                    {isLoggedIn && (
+                        <li className="absolute bottom-4 left-0 w-full p-4">
+                            <div className="w-full flex items-center justify-center gap-4">
+                                <Link to="/user/profile" className='btn-primary hover:bg-blue-800 px-4 py-1 font-semibold rounded-md w-full text-center'>
+                                    Profile
+                                </Link>
+                                <button onClick={handleLogout} className='btn-secondary hover:bg-green-600 px-4 py-1 font-semibold rounded-md w-full'>
+                                    Logout
                                 </button>
-
-                                <button className='btn-secondary hover:bg-green-600  px-4 py-1 font-semibold rounded-md w-full mb-2 '>
-                                    <Link onClick={handleLogout}>LogOut</Link>
-                                </button>
-                        </div>
-                </li>
+                            </div>
+                        </li>
                     )}
 
 
