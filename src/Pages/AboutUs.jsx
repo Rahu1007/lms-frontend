@@ -70,9 +70,12 @@ import aboutMainImage from "../assets/fullphoto.jpg";
                    <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
        className="w-full" />
+       
                      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5
        top-1/2">
+        
                        <a href="#slide4" className="btn btn-circle">❮</a>
+                       <h2 className='text-2xl font-semibold text-gray-900'>U.S.A</h2>
                      <a href="#slide2" className="btn btn-circle">❯</a>
                     </div>
                   </div>
@@ -82,6 +85,7 @@ import aboutMainImage from "../assets/fullphoto.jpg";
                      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5
        top-1/2">
                      <a href="#slide1" className="btn btn-circle">❮</a>
+                                            <h2 className='text-2xl font-semibold text-gray-900'>Tokyo</h2>
                        <a href="#slide3" className="btn btn-circle">❯</a>
                    </div>
                   </div>
@@ -91,6 +95,7 @@ import aboutMainImage from "../assets/fullphoto.jpg";
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5
        top-1/2">
                        <a href="#slide2" className="btn btn-circle">❮</a>
+               <h2 className='text-2xl font-semibold text-gray-900'>Spain</h2>
                       <a href="#slide4" className="btn btn-circle">❯</a>
                     </div>
                    </div>
@@ -100,6 +105,7 @@ import aboutMainImage from "../assets/fullphoto.jpg";
                      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5
        top-1/2">
                       <a href="#slide3" className="btn btn-circle">❮</a>
+                <h2 className='text-2xl font-semibold text-gray-900'>Miami</h2>
                        <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                   </div>

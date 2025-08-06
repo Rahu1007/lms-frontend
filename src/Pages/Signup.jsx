@@ -13,8 +13,8 @@ function Signup() {
         fatherName: '',
         motherName: '',
         email: '',
-        Number:'',
-        Collage:'',
+        number:'',
+        college:'',
         address: '',
         password: '',
         confirmPassword: '',
@@ -186,21 +186,21 @@ function Signup() {
                                 id="number"
                                 placeholder="Enter your number..."
                                 className="w-full px-3 py-2 placeholder-gray-500 border rounded-lg focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                value={signupData.Number}
+                                value={signupData.number}
                                 onChange={handleUserInput}
                             />
                         </div>
 
                                  <div>
-                            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Collage Name </label>
+                            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">College Name </label>
                             <input
-                                type="collage"
+                                type="text"
                                 required
-                                name="collage"
-                                id="collage"
-                                placeholder="Enter your Collage Name..."
+                                name="college"
+                                id="college"
+                                placeholder="Enter your College Name..."
                                 className="w-full px-3 py-2 placeholder-gray-500 border rounded-lg focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                value={signupData.Collage}
+                                value={signupData.college}
                                 onChange={handleUserInput}
                             />
                         </div>
