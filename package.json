@@ -1,0 +1,15 @@
+{
+    "name": "lms-frontend-root",
+    "version": "1.0.0",
+    "description": "LMS Frontend and Backend",
+    "scripts": {
+        "dev": "cd client && npm run dev",
+        "dev:server": "cd server && npm run dev",
+        "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
+        "build": "cd client && npm run build",
+        "lint": "cd client && npm run lint"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
